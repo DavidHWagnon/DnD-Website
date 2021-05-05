@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Build Your Own DND Character</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="script" href="js/main-js.js">
+</head>
+<body>
+  <h1 class="text-center"> BUILD YOUR OWN DND CHARACTER (5E) </h1>
+  <div class="row justify-content-around">
+    <h4 class="">Created by: David Wagnon</h4>
+    <h4 class=""><a>Social Media's Placeholder</a></h4>
+  </div>
+
+  <hr style="color: hotpink; background-color: hotpink; height: 4px;">
+  <main class="d-flex col-6 justify-content-left">
+    <form>
+      <div class="form-group">
+        <label for="characterName">Enter Character Name</label>
+        <input type="text" class="form-control" id="characterName" placeholder="Ex: Tymei">
+      </div>
+      <div class="form-group">
+        <label for="class">Select your Class</label>
+          <select class="custom-select form-group" id="class">
+            <option selected value="custom">Custom</option>
+            <option value="barbarian">Barbarian</option>
+            <option value="bard">Bard</option>
+            <option value="druid">Druid</option>
+            <option value="fighter">Fighter</option>
+            <option value="monk">Monk</option>
+            <option value="paladin">Paladin</option>
+            <option value="ranger">Ranger</option>
+            <option value="rouge">Rouge</option>
+            <option value="sorcerer">Sorcerer</option>
+            <option value="warlock">Warlock</option>
+            <option value="wizard">Wizard</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <label for="race">Select your Race</label>
+        <select class="custom-select form-group" id="race">
+          <option selected value="Human">Custom</option>
+          <option value="barbarian">Barbarian</option>
+          <option value="bard">Bard</option>
+          <option value="druid">Druid</option>
+          <option value="fighter">Fighter</option>
+          <option value="monk">Monk</option>
+          <option value="paladin">Paladin</option>
+          <option value="ranger">Ranger</option>
+          <option value="rouge">Rouge</option>
+          <option value="sorcerer">Sorcerer</option>
+          <option value="warlock">Warlock</option>
+          <option value="wizard">Wizard</option>
+        </select>
+      </div>
+      <button id='create' type="button">Nice</button>
+    </form>
+  </main>
+  <script>
+    "use strict";
+    var custom = [{}];
+    var barbarian = [{}];
+    var bard = [{}];
+    var druid = [{}];
+    var fighter = [{}];
+    var monk = [{}];
+    var paladin = [{}];
+    var ranger = [{}];
+    var rouge = [{}];
+    var sorcerer = [{}];
+    var warlock = [{}];
+    var wizard = [{}];
+
+
+    $('#create').click(function() {
+      // $(this).css('background-color', '#FF0');
+      console.log("Creating Character")
+      }
+    );
+
+
+  </script>
+</body>
+</html>
