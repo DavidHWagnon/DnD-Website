@@ -8,23 +8,51 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
   <link rel="script" href="js/main-js.js">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <style>
+    *{
+      font-family: 'Libre Baskerville', serif;
+    }
+    body{
+      background-image: url("img/Tavern-Gif.webp");
+      background-size: cover;
+    }
+    h1{
+      font-size: xxx-large;
+      color: black;
+    }
+    h4{
+      color: black;
+    }
+    label{
+      color: white;
+      font-size: x-large;
+    }
+    .transparent{
+      background-color: rgba(116,131,131, .25);
+    }
+
+  </style>
 </head>
-<body style="background-color: lightseagreen">
-<h1 class="text-center"> BUILD YOUR OWN DND CHARACTER (5E) </h1>
-<div class="row justify-content-around">
-  <h4 class="">Created by: David Wagnon</h4>
-  <h4 class=""><a>Social Media's Placeholder</a></h4>
+<body>
+
+<div class="transparent">
+  <h1 class="text-center pb-3"> "GREETINGS TRAVELER. TELL ME ABOUT YOURSELF" </h1>
+  <div class="row justify-content-around">
+    <h4 class="">Created by: David Wagnon</h4>
+    <h4 class=""><a>Social Media's Placeholder</a></h4>
+  </div>
 </div>
 
-<hr style="color: hotpink; background-color: hotpink; height: 4px;">
-<main class="d-flex col-6 justify-content-left">
-  <form class="card">
+<main class="d-flex col-6 justify-content-left mt-5">
+  <form class="card p-3" style="border: 3px solid gray; background-color: rgba(50,26,47, 0.7);">
     <div class="form-group card-group">
-      <label for="characterName" class="card-title">Enter Character Name</label>
-      <input type="text" class="form-control" id="characterName" placeholder="Ex: Tymei">
+      <label for="characterName" class="card-title">Enter Your Name</label>
+      <input type="text" class="form-control" id="characterName" placeholder="Ex: Raella">
     </div>
     <div class="form-group card-group">
-      <label for="class" class="card-title">Select your Class</label>
+      <label for="class" class="card-title">Select Your Class</label>
       <select class="custom-select form-group" id="class">
         <option selected value="custom">Custom</option>
         <option value="barbarian">Barbarian</option>
@@ -41,7 +69,7 @@
       </select>
     </div>
     <div class="form-group">
-      <label for="race">Select your Race</label>
+      <label for="race">Select Your Race</label>
       <select class="custom-select form-group" id="race">
         <option selected value="human">Human</option>
         <option value="dragonborn">Dragonborn</option>
@@ -54,7 +82,11 @@
         <option value="tiefling">Tiefling</option>
       </select>
     </div>
-    <button id='create' class="btn btn-info btn-outline-secondary btn-block" style="color: black " type="submit" >Create</button>
+    <div class="form-group card-group">
+      <label for="characterBackground" class="card-title">What Are Your Origins?</label>
+      <textarea type="text" class="form-control" id="characterBackground" placeholder="Ex: I am Raella a 32 year old Druid Tiefling. I've been a wanderer all my life. My only true companions are the creatures of nature, who pass no judgment on my bloodline. I seek to gain the strength and experience necessary to protect my home and the ones I care for."></textarea>
+    </div>
+    <button id='create' class="btn btn-outline-secondary btn-block" style="color: black;background-color: #ec7c11" type="submit" >Create</button>
   </form>
 </main>
 <script>
